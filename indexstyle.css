@@ -1,0 +1,163 @@
+/* header and navigation stuff */
+
+#navigation{
+    width: 50%;
+    margin: auto;
+    justify-content: space-between;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+#navigation li a{
+    text-decoration: none;
+    color: rgb(252, 255, 159);
+    display: block;
+
+}
+
+#navigation li{
+    list-style-type: none;
+    padding: 15px;
+}
+
+header, footer{
+    background-color: rgb(53, 0, 74);
+    padding: 15px;
+}
+
+/* end */
+
+
+
+/* main page stuff */
+
+main{
+    background-color: rgb(43, 0, 60);
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+    
+}
+
+.screen{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    height: 100vh;
+}
+.screen1{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    height: 100vh;
+}
+
+
+
+#text p{
+    width: 90%;
+    margin: auto;
+    text-align: justify;
+   font-size: 20px;
+}
+
+#img img{
+    width: 100%;
+    position: relative  ;
+}
+
+#img img:hover{
+    scale: 1.05;
+    transition: 0.5s;
+}
+
+
+
+
+
+#img img::after
+
+
+
+
+
+
+.animationspace{
+    width: 70%;
+    text-align: center;
+    margin:20px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: azure;
+    height: 100vh;
+}
+
+.animationspace h1{
+    font-size: 2.5rem;
+}
+
+#animate{
+    animation: pop 2s;
+
+}
+
+@keyframes pop {
+    0%{border-radius: 0%;}
+    100%{border-radius: 50%;}
+}
+
+.left {
+    animation: tungununu1 3s;
+}
+
+.right{
+    animation: tungununu2 3s;
+}
+
+
+@keyframes tungununu1 {
+    0%{transform: translateX(-500%);}
+    100%{transform: translateX(0%);}
+}
+@keyframes tungununu2 {
+    0%{transform: translateX(300%);}
+    100%{transform: translateX(0%);}
+}
+/* end */
+
+/* footer stuff */
+
+footer{
+    text-align: center;}
+
+.socials ul li{
+    
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       font-size: 30px;
+}
+
+.socials a{
+    text-decoration: none;
+    margin:15px;
+    padding: 15px;
+    display: block;
+    color: rgb(252, 255, 159);
+
+}
+
+/* end */
