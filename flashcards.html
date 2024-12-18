@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flashcards</title>
+    <link rel="shortcut icon" href="images/logo.png" type="image/png">
+    <link rel="stylesheet" href="indexstyle.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+.flashcard_parent{
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns:repeat(3, 33%) ;
+    grid-template-rows: repeat(3);
+    gap: 20px;
+}
+
+.flashcard{
+    background-color: rgb(44, 44, 44);
+border-radius: 20px;
+padding: 20px;
+text-align: left;
+}
+#idea{
+    transition: 0.5s;
+}
+#idea1{
+    transition: 0.5s;
+}
+#idea2{
+    transition: 0.5s;
+}
+#idea3{
+    transition: 0.5s;
+}
+#idea4{
+    transition: 0.5s;
+}
+#idea5{
+    transition: 0.5s;
+}
+#idea6{
+    transition: 0.5s;
+}
+#idea7{
+    transition: 0.5s;
+}
+#idea8{
+    transition: 0.5s;
+}
+
+@media (max-width:992px){
+    .flashcard_parent{
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 100% ;
+    gap: 20px;
+}
+}
+    </style>
+</head>
+<body>
+    <header> 
+        <label for="menu1" id="menu12">Menu</label>
+        <input type="checkbox" id="menu1" style="display: none;">
+            <header>
+                
+                <nav>
+                    <ul id="navigation" >
+                        <li><a href="python roadmap.html">RoadMaps</a></li>
+                        <li><a href="#">FlashCards</a></li>
+                        <li><a href="#">Quizzes</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+        
+            </header>
+    </header>
+    <main>
+        <div class="flashcard_parent">
+<p class="flashcard"  onmouseover="appear()" onmouseout="disappear()">
+    <span class="item_heading" >Devishree</span> <br><br>
+
+    <span id="idea">
+        <span class="item_heading" >devishree</span> <br><br>
+
+    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos eum sunt, quisquam qui eligendi consequuntur nulla a doloribus magnam veniam distinctio at accusantium facere repellendus officia architecto beatae, explicabo officiis quia! Inventore rerum, repellat doloremque at nesciunt vitae vel reprehenderit excepturi placeat aperiam. Dolorem vel laboriosam inventore repellat. Fugiat, dicta.</span>
+    </span>
+</p>
+<p class="flashcard"  onmouseover="appear1()" onmouseout="disappear1()">
+    <span class="item_heading" >Devishree</span> <br><br>
+
+    <span id="idea1">
+        <span class="item_heading" >devishree</span> <br><br>
+
+    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos eum sunt, quisquam qui eligendi consequuntur nulla a doloribus magnam veniam distinctio at accusantium facere repellendus officia architecto beatae, explicabo officiis quia! Inventore rerum, repellat doloremque at nesciunt vitae vel reprehenderit excepturi placeat aperiam. Dolorem vel laboriosam inventore repellat. Fugiat, dicta.</span>
+    </span>
+</p>
+<p class="flashcard"  onmouseover="appear2()" onmouseout="disappear2()">
+    <span class="item_heading" >Devishree</span> <br><br>
+
+    <span id="idea2">
+        <span class="item_heading" >devishree</span> <br><br>
+
+    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos eum sunt, quisquam qui eligendi consequuntur nulla a doloribus magnam veniam distinctio at accusantium facere repellendus officia architecto beatae, explicabo officiis quia! Inventore rerum, repellat doloremque at nesciunt vitae vel reprehenderit excepturi placeat aperiam. Dolorem vel laboriosam inventore repellat. Fugiat, dicta.</span>
+    </span>
+</p>
+<p class="flashcard"  onmouseover="appear3()" onmouseout="disappear3()">
+    <span class="item_heading" >Devishree</span> <br><br>
+
+    <span id="idea3">
+        <span class="item_heading" >devishree</span> <br><br>
+
+    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos eum sunt, quisquam qui eligendi consequuntur nulla a doloribus magnam veniam distinctio at accusantium facere repellendus officia architecto beatae, explicabo officiis quia! Inventore rerum, repellat doloremque at nesciunt vitae vel reprehenderit excepturi placeat aperiam. Dolorem vel laboriosam inventore repellat. Fugiat, dicta.</span>
+    </span>
+</p>
+<p class="flashcard"  onmouseover="appear4()" onmouseout="disappear4()">
+    <span class="item_heading" >Devishree</span> <br><br>
+
+    <span id="idea4">
+        <span class="item_heading" >devishree</span> <br><br>
+
+    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos eum sunt, quisquam qui eligendi consequuntur nulla a doloribus magnam veniam distinctio at accusantium facere repellendus officia architecto beatae, explicabo officiis quia! Inventore rerum, repellat doloremque at nesciunt vitae vel reprehenderit excepturi placeat aperiam. Dolorem vel laboriosam inventore repellat. Fugiat, dicta.</span>
+    </span>
+</p>
+<p class="flashcard"  onmouseover="appear5()" onmouseout="disappear5()">
+    <span class="item_heading" >Devishree</span> <br><br>
+
+    <span id="idea5">
+        <span class="item_heading" >devishree</span> <br><br>
+
+    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos eum sunt, quisquam qui eligendi consequuntur nulla a doloribus magnam veniam distinctio at accusantium facere repellendus officia architecto beatae, explicabo officiis quia! Inventore rerum, repellat doloremque at nesciunt vitae vel reprehenderit excepturi placeat aperiam. Dolorem vel laboriosam inventore repellat. Fugiat, dicta.</span>
+    </span>
+</p>
+<p class="flashcard"  onmouseover="appear6()" onmouseout="disappear6()">
+    <span class="item_heading" >Devishree</span> <br><br>
+
+    <span id="idea6">
+        <span class="item_heading" >devishree</span> <br><br>
+
+    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos eum sunt, quisquam qui eligendi consequuntur nulla a doloribus magnam veniam distinctio at accusantium facere repellendus officia architecto beatae, explicabo officiis quia! Inventore rerum, repellat doloremque at nesciunt vitae vel reprehenderit excepturi placeat aperiam. Dolorem vel laboriosam inventore repellat. Fugiat, dicta.</span>
+    </span>
+</p>
+<p class="flashcard"  onmouseover="appear7()" onmouseout="disappear7()">
+    <span class="item_heading" >Devishree</span> <br><br>
+
+    <span id="idea7">
+        <span class="item_heading" >devishree</span> <br><br>
+
+    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos eum sunt, quisquam qui eligendi consequuntur nulla a doloribus magnam veniam distinctio at accusantium facere repellendus officia architecto beatae, explicabo officiis quia! Inventore rerum, repellat doloremque at nesciunt vitae vel reprehenderit excepturi placeat aperiam. Dolorem vel laboriosam inventore repellat. Fugiat, dicta.</span>
+    </span>
+</p>
+<p class="flashcard"  onmouseover="appear8()" onmouseout="disappear8()">
+    <span class="item_heading" >Devishree</span> <br><br>
+
+    <span id="idea8">
+        <span class="item_heading" >devishree</span> <br><br>
+
+    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos eum sunt, quisquam qui eligendi consequuntur nulla a doloribus magnam veniam distinctio at accusantium facere repellendus officia architecto beatae, explicabo officiis quia! Inventore rerum, repellat doloremque at nesciunt vitae vel reprehenderit excepturi placeat aperiam. Dolorem vel laboriosam inventore repellat. Fugiat, dicta.</span>
+    </span>
+</p>
+
+</div>
+        </div>
+
+    </main>
+    <footer>
+        <div class="socials">
+            <ul>
+                <li><a href="https://www.instagram.com/himamshus06/"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://github.com/himamshus06"><i class="fa-brands fa-github"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/himamshu-s-886b35301/"><i class="fa-brands fa-linkedin"></i></a></li>
+                <li><a href="tel:+917259680026"><i class="fa-solid fa-phone"></i></a></li>
+            </ul>
+        </div>
+        <span>
+            &copy; Copyright 2024
+        </span>
+    </footer>
+    <script src="https://kit.fontawesome.com/44bdc731e1.js" crossorigin="anonymous"></script>
+    <script>
+var contentToRemove = document.getElementById('idea');
+var contentToRemove1 = document.getElementById('idea1');
+var contentToRemove2 = document.getElementById('idea2');
+var contentToRemove3 = document.getElementById('idea3');
+var contentToRemove4 = document.getElementById('idea4');
+var contentToRemove5 = document.getElementById('idea5');
+var contentToRemove6 = document.getElementById('idea6');
+var contentToRemove7 = document.getElementById('idea7');
+var contentToRemove8 = document.getElementById('idea8');
+
+contentToRemove.style.opacity="0";
+contentToRemove1.style.opacity="0";
+contentToRemove2.style.opacity="0";
+contentToRemove3.style.opacity="0";
+contentToRemove4.style.opacity="0";
+contentToRemove5.style.opacity="0";
+contentToRemove6.style.opacity="0";
+contentToRemove7.style.opacity="0";
+contentToRemove8.style.opacity="0";
+
+function appear(){
+    contentToRemove.style.opacity="1";
+}
+function disappear(){
+    contentToRemove.style.opacity="0";
+}
+
+
+
+
+function appear1(){
+    contentToRemove1.style.opacity="1";
+}
+function disappear1(){
+    contentToRemove1.style.opacity="0";
+}
+
+
+
+function appear2(){
+    contentToRemove2.style.opacity="1";
+}
+function disappear2(){
+    contentToRemove2.style.opacity="0";
+}
+
+
+
+
+function appear3(){
+    contentToRemove3.style.opacity="1";
+}
+function disappear3(){
+    contentToRemove3.style.opacity="0";
+}
+
+
+
+function appear4(){
+    contentToRemove4.style.opacity="1";
+}
+function disappear4(){
+    contentToRemove4.style.opacity="0";
+}
+
+
+
+function appear5(){
+    contentToRemove5.style.opacity="1";
+}
+function disappear5(){
+    contentToRemove5.style.opacity="0";
+}
+
+
+
+
+function appear6(){
+    contentToRemove6.style.opacity="1";
+}
+function disappear6(){
+    contentToRemove6.style.opacity="0";
+}
+
+
+
+function appear7(){
+    contentToRemove7.style.opacity="1";
+}
+function disappear7(){
+    contentToRemove7.style.opacity="0";
+}
+
+
+
+function appear8(){
+    contentToRemove8.style.opacity="1";
+}
+function disappear8(){
+    contentToRemove8.style.opacity="0";
+}
+
+
+
+    </script>
+</body>
+</html>

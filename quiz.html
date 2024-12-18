@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Quiz</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: rgb(34, 34, 34);
+      color: #e2e2e2;
+    }
+
+    .quiz-container {
+      max-width: 600px;
+      margin: 50px auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      color: black;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .question {
+      margin-bottom: 20px;
+    }
+
+    button {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    #result {
+      margin-top: 20px;
+    }
+
+    #score {
+      font-weight: bold;
+    }
+
+    #feedback li {
+      margin: 5px 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="quiz-container">
+    <h1>Simple Quiz</h1>
+    <form id="quiz-form">
+      <div class="question">
+        <p>1. What is the capital of France?</p>
+        <label><input type="radio" name="q1" value="Paris"> Paris</label><br>
+        <label><input type="radio" name="q1" value="London"> London</label><br>
+        <label><input type="radio" name="q1" value="Berlin"> Berlin</label><br>
+        <label><input type="radio" name="q1" value="Madrid"> Madrid</label>
+      </div>
+      <div class="question">
+        <p>2. Which planet is known as the Red Planet?</p>
+        <label><input type="radio" name="q2" value="Mars"> Mars</label><br>
+        <label><input type="radio" name="q2" value="Jupiter"> Jupiter</label><br>
+        <label><input type="radio" name="q2" value="Saturn"> Saturn</label><br>
+        <label><input type="radio" name="q2" value="Venus"> Venus</label>
+      </div>
+      <div class="question">
+        <p>3. What is the boiling point of water (in °C)?</p>
+        <label><input type="radio" name="q3" value="100"> 100</label><br>
+        <label><input type="radio" name="q3" value="0"> 0</label><br>
+        <label><input type="radio" name="q3" value="50"> 50</label><br>
+        <label><input type="radio" name="q3" value="200"> 200</label>
+      </div>
+      <button type="button" id="submit-btn">Submit</button>
+    </form>
+    <div id="result" class="hidden">
+      <h2>Your Results</h2>
+      <p id="score"></p>
+      <ul id="feedback"></ul>
+    </div>
+  </div>
+  <script>
+    document.getElementById("submit-btn").addEventListener("click", function () {
+      // Define correct answers
+      const correctAnswers = {
+        q1: "Paris",
+        q2: "Mars",
+        q3: "100",
+      };
+  
+      // Get user answers
+      const form = document.getElementById("quiz-form");
+      const userAnswers = new FormData(form);
+  
+      let score = 0;
+      let feedback = "";
+  
+      // Compare user answers with correct answers
+      for (const [question, correctAnswer] of Object.entries(correctAnswers)) {
+        const userAnswer = userAnswers.get(question);
+        if (userAnswer === correctAnswer) {
+          score++;
+          feedback += `<li>Question ${question.slice(1)}: Correct</li>`;
+        } else {
+          feedback += `<li>Question ${question.slice(1)}: Incorrect (Correct answer: ${correctAnswer})</li>`;
+        }
+      }
+  
+      // Display results
+      document.getElementById("score").textContent = `Your score: ${score}/${Object.keys(correctAnswers).length}`;
+      document.getElementById("feedback").innerHTML = feedback;
+      document.getElementById("result").classList.remove("hidden");
+    });
+  </script>
+  
+</body>
+</html>
