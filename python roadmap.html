@@ -18,7 +18,8 @@
                 <li><a href="#">RoadMaps</a></li>
                 <li><a href="#">FlashCards</a></li>
                 <li><a href="#">Quizzes</a></li>
-                <li><a href="#">About and Contact</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
         </nav>
 
@@ -193,12 +194,205 @@ else: <br>
 
 <div class="box">
     <br><br><br><br><h1>Loops</h1><br><br><hr><br><br>
+
+
+
+    <p id="boxP" style="text-align: left;"> <br><br>
+        <span class="item_heading">Loops repeat a block of code.</span><br><br>
+<span class="item_heading">1. For Loop -</span> <br><br>
+Iterates over a sequence (like a range, list, or string). <br><br>
+Syntax:<br><br>
+for variable in sequence:<br><br>
+&nbsp;    # Code to execute in each iteration<br><br>
+Example:<br><br>
+for i in range(5):  # Loops from 0 to 4<br><br>
+&nbsp;    print(i)<br><br>
+
+<span class="item_heading">2.While Loop -</span><br><br>
+Repeats as long as a condition is true. <br><br>
+Syntax:<br><br>
+while condition:<br><br>
+&nbsp;    # Code to execute<br><br>
+Example:<br><br><br><br>
+count = 0<br><br>
+while count &lt; 5:<br><br>
+&nbsp;    print(count)<br><br>
+&nbsp;    count += 1<br><br>
+
+    </p>
+
+
+</div><br><br>
+<!-- <br><br> &nbsp;   <span class="item_heading"></span> -->
+<div class="box">
+    <h1>Type Conversion</h1><br><br><hr><br><br>
+    <span style="max-width: 100px;"> Type conversion in Python refers to converting one data type to another. It can be either implicit (automatic) or explicit (manual).
+        Type conversion in Python refers to converting one data type to another. It can be either implicit (automatic) or explicit (manual). Here's a concise overview:
+        </span>
+  <p id="boxP" style="text-align: left;">
+    
+   <br><br> <span class="item_heading">1. Implicit Type Conversion</span><br><br>
+    Python automatically converts one type to another <br> (e.g., integer to float).<br><br>
+    Example:<br><br>
+    x = 5   # Integer<br><br>
+    y = 2.5 # Float<br><br>
+    z = x + y  # x is implicitly converted to float<br><br>
+    print(z)   <br>
+    
+    <br><br> <span class="item_heading">  2. Explicit Type Conversion</span><br><br>
+    You manually convert using Python's built-in functions.<br><br>
+    Common Functions:<br><br>
+    o	int() - Converts to integer.<br><br>
+    o	float() - Converts to float.<br><br>
+    o	str() - Converts to string.<br><br>
+    o	list() - Converts to a list.<br><br>
+    o	tuple() - Converts to a tuple.<br><br>
+    <br><br> <span class="item_heading">Examples:</span><br><br>
+    <b># Integer to String </b><br><br>
+    x = 5<br><br>
+    x_str = str(x)<br><br>
+    print(x_str, type(x_str)) <br><br>
+    
+   <b>  # String to Integer</b><br><br>
+    y = "10"<br><br>
+    y_int = int(y)<br><br>
+    print(y_int, type(y_int)) <br><br>
+    
+     <b># Float to Integer</b><br><br>
+    z = 3.14<br><br>
+    z_int = int(z)<br><br>
+    print(z_int)<br><br>
+    
+    <br><br>  <span class="item_heading">3. Conversion in Input </span><br><br>
+    Input is always a string; convert it to other types as needed.<br><br>
+    age = int(input("Enter your age: "))  # Convert to integer<br><br>
+    print(age, type(age))<br><br>
+
+    Type conversion helps ensure the correct data types for <br> operations.<br><br>
+    
+    
+    
+  </p>
 </div>
 
+<!-- <br><br> &nbsp;  <span class="item_heading"></span> -->
+<div class="box">
+  <br><br>  <h1>Operators</h1><br><br><hr><br><br>
+<p id="boxP">
+    
+    
+    <br><br> <span class="item_heading">1. Arithmetic Operators</span><br><br> 
+    <b>Used for mathematical calculations.</b><br><br> 
+    
+    + &nbsp;  # Addition<br><br> 
+    -  &nbsp; # Subtraction<br><br> 
+    *  &nbsp; # Multiplication<br><br> 
+    /  &nbsp; # Division (returns float)<br><br> 
+    // &nbsp; # Floor Division (returns integer part of division)<br><br> 
+    %  &nbsp; # Modulus (remainder)<br><br> 
+    ** &nbsp; # Exponentiation (power)<br><br> <br><br> 
+   
+    <br><br><span class="item_heading">Example: </span><br><br> 
+    x = 10<br><br> 
+    y = 3<br><br> 
+    print(x + y) &nbsp; # 13<br><br> 
+    print(x / y)&nbsp;  # 3.333...<br><br> 
+    print(x % y) &nbsp; # 1<br><br> 
+    print(x ** y)&nbsp; # 1000<br><br> 
+    
+    <br><br> <span class="item_heading">2. Comparison Operators</span><br><br> 
+    Compare two values; return True or False.<br><br> 
+    == &nbsp; # Equal to<br><br> 
+    != &nbsp; # Not equal to<br><br> 
+    >  &nbsp; # Greater than<br><br> 
+    <  &nbsp; # Less than<br><br> 
+    >= &nbsp; # Greater than or equal to<br><br> 
+    <= &nbsp; # Less than or equal to<br><br> 
+    <br><br><span class="item_heading">Example: </span><br><br> 
+    x = 5<br><br> 
+    y = 10<br><br> 
+    print(x == y) &nbsp; # False<br><br> 
+    print(x < y) &nbsp;  # True<br><br> 
+    
+    <br><br><span class="item_heading">3. Logical Operators </span><br><br> 
+    Combine conditional statements.<br><br> 
+    and &nbsp; # True if both conditions are True<br><br> 
+    or  &nbsp; # True if at least one condition is True<br><br> 
+    not &nbsp; # Reverses the condition<br><br> 
+    <br><br><span class="item_heading"> Example:</span><br><br> 
+    x = 5<br><br> 
+    y = 10<br><br> 
+    print(x > 0 and y > 0) &nbsp; # True<br><br> 
+    print(x > 0 or y < 0)  &nbsp; # True<br><br> 
+    print(not(x > 0))      &nbsp; # False<br><br> 
+    
+    <br><br><span class="item_heading"> 4. Assignment Operators</span><br><br> 
+    Assign values with shorthand operations.<br><br> 
+    =  &nbsp; # Assign<br><br> 
+    += &nbsp; # Add and assign<br><br> 
+    -= &nbsp; # Subtract and assign<br><br> 
+    *= &nbsp; # Multiply and assign<br><br> 
+    /= &nbsp; # Divide and assign<br><br> 
+    <br><br><span class="item_heading"> Example: </span><br><br> 
+    x = 5<br><br> 
+    x += 3 &nbsp; # x = x + 3<br><br> 
+    print(x) &nbsp; # 8<br><br> 
+    
+    <br><br> <span class="item_heading">5. Membership Operators</span><br><br> 
+    Check for membership in sequences (e.g., lists, strings).<br><br> 
+    in     &nbsp;# True if value exists<br><br> 
+    not in &nbsp;# True if value does not exist<br><br> 
+   <br><br>  <span class="item_heading">Example:</span><br><br> 
+    name = "hehehehehe"<br><br> 
+    print("h" in name)     &nbsp;  # True<br><br> 
+    print("z" not in name) &nbsp;  # True<br><br> 
+    
+</p>
+</div>
+<!--  &nbsp;  <br><br><span class="item_heading"></span> -->
 
+<br><br><h1>Absolute Value</h1><br><br><hr><br><br>
+<div class="box">
+    <span>The absolute value of a number is its non-negative value, <br>regardless of its sign. In Python, you can find the <br>absolute value using the built-in function abs().</span>
+<p id="boxP">
+    ++++
 
+<br><br><span class="item_heading">Syntax:</span><br><br>
+abs(number)<br><br>
+Examples<br><br>
+ <br><br><span class="item_heading">1.	Absolute value of an integer:</span><br><br>
+print(abs(-10))  # Output: 10<br><br>
+print(abs(10))   # Output: 10<br><br>
+<br><br><span class="item_heading">2.	Absolute value of a float:</span><br><br>
+print(abs(-3.14))  # Output: 3.14<br><br>
+print(abs(3.14))   # Output: 3.14<br><br>
+<br><br><span class="item_heading">3.	Absolute value in expressions:</span><br><br>
+x = -15 + 5<br><br>
+print(abs(x))  # Output: 10<br><br>
+The abs() function is simple and works for both integers <br>and floating-point numbers.<br><br>
 
+<br><br><span class="item_heading">Absolute value in Math Function</span><br><br>
+To compute the absolute value using Python's <br>math module, you can use math.fabs(), which <br>works specifically with floats. It's part <br>of the math module, so you need to import it first.
+<br><br><span class="item_heading">Syntax</span><br><br>
+import math<br><br>
+math.fabs(number)<br><br>
+<br><br><span class="item_heading">Examples</span><br><br>
+<br><br><span class="item_heading">1.	Using abs():</span><br><br>
+print(abs(-10))        # Output: 10<br><br>
+print(abs(-3.14))      # Output: 3.14<br><br>
+print(abs(3 + 4j))     # Output: 5.0 (Magnitude of a complex number)<br><br>
+<br><br><span class="item_heading">2.	Using math.fabs():</span><br><br>
+import math<br><br>
+print(math.fabs(-10))  # Output: 10.0<br><br>
+print(math.fabs(-3.14))  # Output: 3.14<br><br>
+# print(math.fabs(3 + 4j))  # Error: Only works with floats or integers<br><br>
 
+</p>
+</div>
+
+<div class="box">
+
+</div>
 
 </div>
 </main>
